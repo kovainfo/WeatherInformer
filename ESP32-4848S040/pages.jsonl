@@ -1,0 +1,76 @@
+{"page":0,"id":1,"obj":"obj","swipe":1,"x":0,"y":330,"h":150,"w":480,"opacity":0,"bg_color":"#000000","border_width":0,"comment":"swipe-area-at-top"}
+// WEATHER PAGE 1
+{"page":1,"id":100,"obj":"img","src":"L:/back.png","auto_size":0,"w":480}
+{"page":1,"id":1,"obj":"img","src":"L:/main_01d.png"}
+
+{"page":1,"id":101,"obj":"label","x":250,"y":5,"h":40,"w":220,"text": "\uE150 00:00", "template": "\uE150 %H:%M","align":1,"bg_opa":"0","text_color":"#FFFFFF","text_font":40}
+{"page":1,"id":102,"obj":"label","x":250,"y":45,"h":40,"w":220,"text": " ", "template": "%a %d %b %Y","align":1,"bg_opa":"0","text_color":"#999999","text_font":20}
+
+{"page":1,"id":2,"obj":"label","x":250,"y":60,"h":130,"w":220,"text":" ","align":1,"bg_opa":"0","text_color":"#FFFFFF","text_font":80}
+{"page":1,"id":103,"obj":"line","points":[[240,150],[470,150]],"line_color":"#FFFFFF", "line_width":5,"auto_size":0,"y_invert":0}
+{"page":1,"id":3,"obj":"label","x":250,"y":155,"h":130,"w":220,"text":" ",  "align":1,"bg_opa":"0","text_color":"#AAAAAA","text_font":80}
+
+{"page":1,"id":104,"obj":"obj",  "x":5,"y":250,"w":150,"h":220,"click":0,"bg_opa":"70","bg_color":"#000000","border_width":0}
+{"page":1,"id":105,"obj":"obj","x":165,"y":250,"w":150,"h":220,"click":0,"bg_opa":"70","bg_color":"#000000","border_width":0}
+{"page":1,"id":106,"obj":"obj","x":325,"y":250,"w":150,"h":220,"click":0,"bg_opa":"70","bg_color":"#000000","border_width":0}
+
+{"page":1,"id":14,"obj":"label",  "x":5,"y":250,"w":150,"h":25,"text":"-","align":1,"bg_opa":"0","text_color":"#FFFFFF","text_font":25}
+{"page":1,"id":15,"obj":"label",  "x":5,"y":275,"w":150,"h":25,"text":"00.00","align":1,"bg_opa":"0","text_color":"#999999","text_font":25}
+{"page":1,"id":16,"obj":"img",   "x":25,"y":310,"w":150,"src":"L:/icon_01d.png"}
+{"page":1,"id":17,"obj":"label",  "x":5,"y":420,"w":150,"h":25,"text":"00.0 .. 00.0","align":1,"bg_opa":"0","text_color":"#999999","text_font":25}
+
+{"page":1,"id":24,"obj":"label","x":165,"y":250,"w":150,"h":25,"text":"-","align":1,"bg_opa":"0","text_color":"#FFFFFF","text_font":25}
+{"page":1,"id":25,"obj":"label","x":165,"y":275,"w":150,"h":25,"text":"00.00","align":1,"bg_opa":"0","text_color":"#999999","text_font":25}
+{"page":1,"id":26,"obj":"img",  "x":190,"y":310,"w":150,"src":"L:/icon_02d.png"}
+{"page":1,"id":27,"obj":"label","x":165,"y":420,"w":150,"h":25,"text":"00.0 .. 00.0","align":1,"bg_opa":"0","text_color":"#999999","text_font":25}
+
+{"page":1,"id":34,"obj":"label","x":325,"y":250,"w":150,"h":25,"text":"-","align":1,"bg_opa":"0","text_color":"#FFFFFF","text_font":25}
+{"page":1,"id":35,"obj":"label","x":325,"y":275,"w":150,"h":25,"text":"00.00","align":1,"bg_opa":"0","text_color":"#999999","text_font":25}
+{"page":1,"id":36,"obj":"img",  "x":350,"y":310,"w":150,"src":"L:/icon_03d.png"}
+{"page":1,"id":37,"obj":"label","x":325,"y":420,"w":150,"h":25,"text":"00.0 .. 00.0","align":1,"bg_opa":"0","text_color":"#999999","text_font":25}
+
+// SEQURITY PAGE
+{"page":2,"id":100,"obj":"img","src":"L:/disarm2.png","auto_size":0,"w":480}
+{"page":2,"id":1,"obj":"btn","x":104,"y":100,"w":275,"h":275,"toggle":false,
+ "radius":35,"radius2":35,
+ "bg_opa":0,"bg_opa2":150,
+ "bg_color02":"#000000"}
+
+{"page":4,"id":100,"obj":"img","src":"L:/disarm2.png","auto_size":0,"w":480}
+{"page":4,"id":1,"obj":"btnmatrix","x":104,"y":100,"w":275,"h":275,"toggle":false,
+ "radius":35,"radius2":35,
+ "bg_opa":0,"bg_opa2":150,
+ "bg_color02":"#000000"}
+
+// SETTINGS PAGE
+{"page":3,"id":100,"obj":"img","src":"L:/techno.png","auto_size":0,"w":480}
+
+{
+    "page": 3,
+    "id": 1,
+    "y": 0,
+    "x":0,
+    "w": 480,
+    "h": 50,
+    "obj": "btn",
+    "text": "Change Wifi Network",
+    "text_font":32,
+    "radius":0,
+    "action":{"down": "config/wifi {'ssid':'','pass':''}", "up": "restart"}
+}
+// BUTTON RELAY BY GROUPID
+{"page":3,"id":112,
+  "obj":"btn",
+  "x":5,"y":250,"w":150,"h":180,
+  "bg_opa":"50","bg_color":"#000000","bg_color01":"#FF0000",
+  "border_width":2,
+  "toggle":true,
+  "mode":"break",
+  "radius":0,
+  "align":"center",
+  "groupid":1,
+  "text":"Normal Button"
+}
+
+{"page":1,"id":0,"prev":3}
+{"page":3,"id":0,"next":1}
