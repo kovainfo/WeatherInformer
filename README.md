@@ -6,7 +6,7 @@
 3) https://www.openhasp.com/0.7.0/
 4) https://github.com/FlyingDomotic/domoticz-mqttmapper-plugin
 
-![photo_2024-04-20 08 32 56](https://github.com/kovainfo/WeatherInformer/assets/36986231/5a75cd39-be04-4385-bf2f-a93071d36032)
+![photo_2024-04-20 08 32 56](https://github.com/kovainfo/WeatherInformer/assets/36986231/d714e24c-c74e-4ac1-a77a-cf16d447cc32)
 
 # Установка и настройка:
 
@@ -22,4 +22,6 @@
 5) для корректной работы в настройках экрана через WEB интерфейс нужно выбрать:
   * HASP Design -> UI Theme: Material Dark (усли значение другое - возможно придётся донастраивать pages.jsonl - поползут цвета)
   * Configuration -> MQTT Settings -> Host Name: main_door (если значение другое, его надо заменить в файле MqttMapper.json)
- 
+6) Создать скрипт автоматизации в Domoticz типа dzVents и поместить туда содержимое файла /domoticz/zdvents_WeatherInformer.lua
+
+
