@@ -7,7 +7,8 @@
 4) https://github.com/FlyingDomotic/domoticz-mqttmapper-plugin
 5) https://www.visualcrossing.com
 
-![photo_2024-04-20 08 32 56](https://github.com/kovainfo/WeatherInformer/assets/36986231/d714e24c-c74e-4ac1-a77a-cf16d447cc32)
+![photo_2024-04-20 09 36 10](https://github.com/kovainfo/WeatherInformer/assets/36986231/f4a8f260-04e9-4b2b-a233-fb10ac835fbc)
+
 
 # Установка и настройка:
 
