@@ -5,6 +5,7 @@
 2) https://mosquitto.org/
 3) https://www.openhasp.com/0.7.0/
 4) https://github.com/FlyingDomotic/domoticz-mqttmapper-plugin
+5) https://www.visualcrossing.com
 
 ![photo_2024-04-20 08 32 56](https://github.com/kovainfo/WeatherInformer/assets/36986231/d714e24c-c74e-4ac1-a77a-cf16d447cc32)
 
@@ -23,6 +24,8 @@
   * HASP Design -> UI Theme: Material Dark (усли значение другое - возможно придётся донастраивать pages.jsonl - поползут цвета)
   * Configuration -> MQTT Settings -> Host Name: main_door (если значение другое, его надо заменить в файле MqttMapper.json)
 6) Создать скрипт автоматизации в Domoticz типа dzVents и поместить туда содержимое файла /domoticz/zdvents_WeatherInformer.lua
-7) Готово!
+7) Зарегистрироваться на https://www.visualcrossing.com , получить API KEY и подставить в скрипт domoticz
+8) вставить GPS координаты места, где хотим видеть прогноз на 2 дня
+9) Готово!
 
 
