@@ -1,4 +1,4 @@
-{"page":0,"id":1,"obj":"obj","swipe":1,"x":0,"y":330,"h":150,"w":480,"opacity":0,"bg_color":"#000000","border_width":0,"comment":"swipe-area-at-top"}
+{"page":0,"id":1,"obj":"obj","swipe":1,"x":0,"y":330,"h":150,"w":480,"opacity":0,"bg_color":"#000000","border_width":0,"comment":"swipe-area-at-bottom"}
 // WEATHER PAGE 1
 {"page":1,"id":100,"obj":"img","src":"L:/back.png","auto_size":0,"w":480}
 {"page":1,"id":1,"obj":"img","src":"L:/main_01d.png"}
