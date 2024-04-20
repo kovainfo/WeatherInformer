@@ -46,14 +46,12 @@ return {
             local forecast1Icon = item.json.days[2].icon
             local forecast1Max  = string.format("%.1f", item.json.days[2].tempmax )
             local forecast1Min  = string.format("%.1f", item.json.days[2].tempmin )
-            -- local forecast1date = item.json.daily[2].dt
             local forecast1name = retn[ tonumber(os.date("%w", item.json.days[2].datetimeEpoch ))+1 ]
             local forecast1date = os.date("%d.%m", item.json.days[2].datetimeEpoch )
             
             local forecast2Icon = item.json.days[3].icon
             local forecast2Max  = string.format("%.1f", item.json.days[3].tempmax )
             local forecast2Min  = string.format("%.1f", item.json.days[3].tempmin )
-            -- local forecast2date = item.json.daily[3].dt
             local forecast2name = retn[ tonumber(os.date("%w", item.json.days[3].datetimeEpoch ))+1 ]
             local forecast2date = os.date("%d.%m", item.json.days[3].datetimeEpoch )
 
@@ -81,15 +79,15 @@ return {
         end
         
         -- ALARM BUTTON SCREEN --
-        if (item.changed and item.name == a_informer and dz.devices("GW_Alarm").state ~= "On") then 
+        if (item.changed and item.name == a_informer and dz.devices("Alarm").state ~= "On") then 
             if dz.devices( a_informer ).levelName == "Hold" then
                 logWrite( "SET ALARM" )
-                dz.devices("GW_Alarm").switchOn()
+                dz.devices("Alarm").switchOn()
                 sendMQTT( "L:/armed.png", MQTTcmdtopic .. "p2b100.src")
             end
         end
         if (item.changed and item.name == "GW_Alarm") then 
-            if dz.devices( "GW_Alarm" ).state == "Off" then
+            if dz.devices( "Alarm" ).state == "Off" then
                 logWrite( "DISARM ALARM" )
                 sendMQTT( "L:/disarm2.png", MQTTcmdtopic .. "p2b100.src")
             end
