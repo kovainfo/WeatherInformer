@@ -11,7 +11,7 @@ local VCaddress = "" -- GPS Coords
 return {
     on =        {       
                         timer           =   { "every 5 minutes" },
-                        devices         =   { s_devices[1], s_devices[2], s_devices[3], w_informer, a_informer, "GW_Alarm" },
+                        devices         =   { s_devices[1], s_devices[2], s_devices[3], w_informer, a_informer, "Alarm" },
                         httpResponses   =   {  response } },                         
               
     logging =   {       level   =   domoticz.LOG_DEBUG,      -- change to LOG_ERROR when script runs without problems ( LOG_DEBUG )                                 
