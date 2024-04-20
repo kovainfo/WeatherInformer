@@ -96,7 +96,7 @@ return {
         
         if (item.isTimer or item.name == w_informer) then
             logWrite( "Read weather forecast" )
-            local url = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/" .. VCaddress .. "?unitGroup=metric&key=" .. VC_API_KEY .. "&contentType=json&lang=ru&include=days,current"
+            local url = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/" .. VCaddress .. "?unitGroup=metric&key=" .. VC_API_KEY .. "&contentType=json&lang=ru&include=days,current&iconSet=icons2"
             dz.openURL({
                   url = url,
                         method = "GET",
