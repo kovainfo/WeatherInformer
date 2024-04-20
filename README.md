@@ -12,9 +12,9 @@
 
 1) Установить и настроить domoticz, mosquitto
 2) Установить клиенты mosquitto_pub и mosquitto_sub
-3) Установить плагин для domoticz (domoticz-mqttmapper-plugin) 
-* на самом деле, можно было бы обойтись только одним этим плагином, но тогда домотикз создаст более 10-15 устройств лишних ненужных
-добавить (или заменить содержимое файла) настройки плагина /domoticz/MqttMapper.json
+3) Установить плагин для domoticz (domoticz-mqttmapper-plugin)
+  * на самом деле, можно было бы обойтись только одним этим плагином, но тогда домотикз создаст более 10-15 устройств лишних ?ненужных?
+  * добавить (или заменить содержимое файла) настройки плагина /domoticz/MqttMapper.json
 4) Установить OpenHasp на устройство ESP32-4848S040
   * можно через браузер: https://nightly.openhasp.com
   * прошивка Guition ESP32-S3-4848S040 / 16 MB / ST7701S / GT911
@@ -23,5 +23,6 @@
   * HASP Design -> UI Theme: Material Dark (усли значение другое - возможно придётся донастраивать pages.jsonl - поползут цвета)
   * Configuration -> MQTT Settings -> Host Name: main_door (если значение другое, его надо заменить в файле MqttMapper.json)
 6) Создать скрипт автоматизации в Domoticz типа dzVents и поместить туда содержимое файла /domoticz/zdvents_WeatherInformer.lua
+7) Готово!
 
 
