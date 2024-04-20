@@ -1,0 +1,28 @@
+{
+    "Информер - статус": {
+	"topic": "hasp/main_door/LWT",
+	"type": "244", "subtype": "73","switchtype": "0",
+	"set": {"topic": ""},
+        "mapping": {"item": "", "default": "0", "values": {"online": "1", "offline": "0"}}
+    },
+    "Информер экран": {
+	"topic": "hasp/main_door/state/backlight",
+	"type": "244", "subtype": "73","switchtype": "0",
+        "set": {"topic": ""},
+        "mapping": {"item": "state", "default": "1", "values": {"on": "1", "off": "0"}}
+    },
+    "Информер страница": {
+	"topic": "hasp/main_door/state/page",
+        "type": "244", "subtype": "62", "switchtype": "18",
+        "options": {"SelectorStyle":"1", "LevelOffHidden": "true", "LevelNames":"Off|Погода|Сигнализация|Тест"},
+        "set": {"topic": "hasp/main_door/command/page", "payload": "#"},
+        "mapping": {"item": "", "default": "1", "values": {"Off": "0", "1": "10", "2": "20","3": "30"}}
+    },
+    "Информер - alarm": {
+	"topic": "hasp/main_door/state/p2b1",
+	"type": "244", "subtype": "62", "switchtype": "18",
+	"options": {"SelectorStyle":"1", "LevelOffHidden": "false", "LevelNames":"Release|Down|Up|Long|Hold"},
+        "set": {"topic": ""},
+        "mapping": {"item": "event", "default": "0", "values": {"release":"0", "down": "10", "up": "20", "long": "30", "hold": "40"}}
+    }
+}
