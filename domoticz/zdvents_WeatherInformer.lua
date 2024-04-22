@@ -76,6 +76,8 @@ return {
             sendMQTT( forecast2date, MQTTcmdtopic .. "p1b35.text")
             sendMQTT( "L:/icon_" .. forecast2Icon .. ".png", MQTTcmdtopic .. "p1b36.src")
             sendMQTT( forecast2Min .. "° .. " .. forecast2Max .. "°", MQTTcmdtopic .. "p1b37.text")
+            
+            sendMQTT(item.json.days[1].description, MQTTcmdtopic .. "p1b38.text")
         end
         
         -- ALARM BUTTON SCREEN --
